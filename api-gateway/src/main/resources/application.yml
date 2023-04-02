@@ -1,0 +1,18 @@
+server:
+  port: 8090
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway: trace
+spring:
+  cloud:
+    gateway:
+     default-filters:
+       - AddResponseHeader=source, yupi
+     routes:
+       - id: api_route
+         uri: http://localhost:8080
+         predicates:
+           - Path=/api/**

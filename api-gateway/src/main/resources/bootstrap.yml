@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        enabled: true
+        server-addr: localhost:8848
+      username: nacos
+      password: nacos
+  profiles:
+    active: dev
+  application:
+    name: gateway

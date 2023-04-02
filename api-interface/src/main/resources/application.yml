@@ -1,0 +1,14 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+api:
+  client:
+    access-key: access
+    secret-key: secret
+spring:
+  application:
+    name: interfaceinfo
+  cloud:
+    nacos:
+      server-addr: localhost:8848
